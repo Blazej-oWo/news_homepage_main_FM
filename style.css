@@ -5,6 +5,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: Inter, 'Arial Narrow Bold', sans-serif;;
+}
    header {
     
    }
@@ -28,7 +31,7 @@
         text-decoration: none;
         font-size: 20px;
         color:hsl(330, 1%, 50%);
-        font-family: Inter, 'Arial Narrow Bold', sans-serif;
+     
     }
     main img {
         width:1130px;
@@ -37,35 +40,70 @@
         margin:40px 0 0 150px;
     }
 
-     main h1 {
+    main h1 {
         font-size: 50px;
-        font-family: Inter, 'Arial Narrow Bold', sans-serif;
-        margin: 15px 0 0 150px;
+        margin: 25px 0 0 150px;
         width:300px;
         
      }
-     main {
+    main {
        
     }
-     main p {
+    main p {
      
         font-size:15px;
-        font-family: Inter, 'Arial Narrow Bold', sans-serif;
         color:hsl(330, 1%, 50%);
-        margin:-180px 0px 0px 490px;
+        margin:-180px 0px 0px 510px;
         width: 340px;
         line-height: 25px;
         
      }
-     main button {
+    main button {
         
         width:200px;
         height: 60px;
-        margin:20px 0px 0px 490px;
+        margin:20px 0px 0px 510px;
         font-size: 22px;
         text-transform: uppercase;
         background-color: hsl(5, 85%, 63%);
         color: #FFF;
+        cursor: pointer;
+     }
+    main button:hover{
+        background-color:  hsl(240, 100%, 5%);
+     }
+     aside {
+        width:420px;
+        height: 610px;
+        background-color:  hsl(240, 100%, 5%);
+        color:#FFF;
+        margin: -609px 10px 0 1320px;
+     }
+
+    
+     aside h2 {
+        color:hsl(35, 77%, 62%);
+        padding: 30px 0 0 30px;
+        font-size: 40px;
+     }
+     aside h3 {
+        margin: 50px 0 0 30px;
+        letter-spacing: 2px;
+
+     }
+     aside p {
+        margin:10px 0 0 30px;
+        color:hsl(330, 1%, 50%);
+        width: 310px;
+        line-height: 24px;
+    
+
+     }
+     aside div {
+        background-color:hsl(330, 1%, 50%); 
+        margin:40px 0 0 30px;
+        width: 350px;
+        height:1px;
      }
     .attribution {
         font-size: 11px;
