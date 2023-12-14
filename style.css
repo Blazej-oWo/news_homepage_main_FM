@@ -181,6 +181,7 @@ body{
    margin: 5px auto;
    transition: all 0.3s ease-in-out;
    color:#FFF;
+
  }
   /* mobile */
   @media (max-width: 375px)
@@ -200,20 +201,21 @@ body{
    }
    .nav-menu{
       position: fixed;
-      right:100%;
-      top:70px;
+      left:100%;
+      top:90px;
       gap:0;
       flex-direction: column;
-      background-color: #fff;
+      background-color: hsl(35, 8%, 72%);
       width: 90%;
-      text-align: center;
+      
       transition: .3s;
    }
    .nav-item {
       margin: 15px 0;
    }
    .nav-menu.active{
-      left:0;
+      left: 20%;
+      height:100%;
    }
   }
 /* footer */
