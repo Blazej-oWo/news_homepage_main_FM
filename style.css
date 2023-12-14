@@ -109,11 +109,40 @@ body{
      article {
         margin:30px 0 0 140px;
         display: flex;
+       
      }
      article img {
         width: 100px;
         height: 140px;
      }
+     article .number{
+        font-size: 30px;
+        font-weight: bold;
+        color:hsl(330, 1%, 50%); 
+        margin:0 0 0 20px;
+     } 
+     article div{
+     display: flex;
+     }
+      .front_article{
+ 
+  } 
+    .middle_article{
+   margin:0 170px;
+  }
+   .article_paragraph {
+      color:hsl(330, 1%, 50%);;
+      margin:90px 0 0 -300px;
+      width: 220px;
+       
+   }
+   .header_article{
+      font-weight: 700;
+      font-size:20px;
+      width: 300px;
+      margin:50px 0 0 -32px;
+   }
+
     .attribution {
         font-size: 11px;
         text-align: center;
