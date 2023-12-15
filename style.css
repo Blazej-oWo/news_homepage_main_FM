@@ -141,18 +141,18 @@ body{
       margin:50px 0 0 -32px;
    }
 /* Hamburger menu */
-.navbar{
-  background-color: hsl(240, 100%, 5%);
+/* .navbar{
+  background-color: hsla(240, 100%, 5%, 0.007);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 24px;
-}
+} */
 .nav-menu{
    display:flex;
    justify-content: space-between;
-   align-items: center;
-   gap:60px;
+   align-items: left;
+   gap:10px;
 }
 .nav-link{
 
@@ -165,29 +165,45 @@ body{
    text-decoration: none;
  }
  .nav-link {
-   color:blue;
- }
+   color:hsl(240, 100%, 5%);
+
+ }                                                    
  .hamburger{
    display: none;
    cursor: pointer;
 
-  
-   
- }
- .bar {
-   display: block;
-   width: 25px;
-   height: 3px;
-   margin: 5px auto;
-   transition: all 0.3s ease-in-out;
-   color:#FFF;
 
+    
  }
+
   /* mobile */
   @media (max-width: 375px)
   {
+   
+  main img:nth-child(1){
+      display: none;
+   }
+  header img {
+   margin:15px 36px;
+ }
+ .pic_sec{
+   width: 300px;
+   height: 330px;
+   margin:0 36px;
+ }
+   /* Hamburger menu */
+   .bar {
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      transition: all 0.3s ease-in-out;
+      color:#FFF;
+   
+    }
    .hamburger{
       display: block;
+   
    }
    .hamburger.active .bar:nth-child(2){
       opacity: 0;
@@ -196,28 +212,33 @@ body{
    {
       transform: translateY(8px) rotate(45deg);
    }
-   .hamburger.active .bar:nth-child(2){
+   .hamburger.active .bar:nth-child(3){
       transform: translateY(-8px) rotate(-45deg);
    }
    .nav-menu{
       position: fixed;
       left:100%;
-      top:90px;
+      top:50px;
       gap:0;
       flex-direction: column;
-      background-color: hsl(35, 8%, 72%);
+      background-color: #FFF;
       width: 90%;
-      
+      border: 2px solid black;
       transition: .3s;
    }
-   .nav-item {
-      margin: 15px 0;
+   .nav-link {
+    
    }
    .nav-menu.active{
       left: 20%;
       height:100%;
    }
+   nav ul {
+      display: none;
+     }
   }
+
+  
 /* footer */
     .attribution {
       margin-top: 30px;
