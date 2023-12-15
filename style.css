@@ -44,7 +44,9 @@ main img {
    object-fit: cover;
    margin: 40px 0 0 150px;
 }
-
+main img:nth-child(2){
+   display: none;
+}
 main h1 {
    font-size: 50px;
    margin: 25px 0 0 150px;
@@ -200,11 +202,15 @@ a {
 
 /* mobile */
 @media (max-width: 375px) {
-
+  article {
+      overflow: hidden;
+   }
    main img:nth-child(1) {
       display: none;
    }
-
+   main img:nth-child(2){
+      display: block;
+   }
    header img {
       margin: 15px 36px;
    }
@@ -222,19 +228,43 @@ a {
       margin:20px 0 0 27px;
    }
    main button {
-      margin: 20px 30px;
+      margin: 30px 30px;
+      font-size: 20px;
    }
    aside{
       margin:10px 20px;
       width: 330px;
    }
    aside h3 {
-      font-size: 16px;
-      
+      font-size: 18px;
+      margin:40px 0 0 25px;
+    
    }
    aside p{
-      font-size: 15px;
-      margin:0 auto;
+      font-size: 14px;
+      margin:10px 0 0 25px;
+      width: 85%;
+   }
+   aside div {
+    
+      margin: 40px 0 0 20px;
+      width: 290px;
+      height: 1px;
+     
+   }
+   article{
+      flex-direction: column;
+      margin:80px 0 0 25px;
+   }
+   .middle_article{
+      margin:30px 0 35px 0px;
+   }
+   article .middle_article div{
+      margin: 0 0 0 -15px;
+   }
+   article .front_article div, 
+   article .last_article div {
+      margin: 0 0 0 -15px;
    }
    /* Hamburger menu */
    .bar {
