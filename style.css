@@ -11,13 +11,12 @@ body {
    ;
 }
 
-header {}
 
 header img {
    margin: 80px 0px 0px 150px;
 }
 
-nav {}
+
 
 nav ul {
 
@@ -210,9 +209,12 @@ a {
    }
    main img:nth-child(2){
       display: block;
+      margin:70px 0 0 36px;
    }
    header img {
-      margin: 15px 36px;
+      display: block;
+      margin: -25px 36px;
+      z-index: -21;
    }
 
    .pic_sec {
@@ -269,16 +271,18 @@ a {
    /* Hamburger menu */
    .bar {
       display: block;
-      width: 25px;
+      width: 35px;
       height: 3px;
       margin: 5px auto;
       transition: all 0.3s ease-in-out;
-      color: #FFF;
+      background-color: #111;
 
    }
 
    .hamburger {
       display: block;
+      margin: 30px 0 0 260px;
+    
 
    }
 
@@ -297,16 +301,17 @@ a {
    .nav-menu {
       position: fixed;
       left: 100%;
-      top: 50px;
+      top: 40px;
       gap: 0;
       flex-direction: column;
       background-color: #FFF;
       width: 90%;
-      border: 2px solid black;
       transition: .3s;
    }
 
-   .nav-link {}
+   .navbar {
+     position: relative;
+   }
 
    .nav-menu.active {
       left: 20%;
@@ -316,6 +321,9 @@ a {
    nav ul {
       display: none;
    }
+   .attribution{
+   margin-top: 130px;
+}
 }
 
 
