@@ -53,7 +53,6 @@ main h1 {
 
 }
 
-main {}
 
 main p {
 
@@ -161,21 +160,13 @@ article div {
 }
 
 /* Hamburger menu */
-/* .navbar{
-  background-color: hsla(240, 100%, 5%, 0.007);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 24px;
-} */
+
 .nav-menu {
    display: flex;
    justify-content: space-between;
    align-items: left;
    gap: 10px;
 }
-
-.nav-link {}
 
 li {
    list-style: none;
@@ -197,6 +188,16 @@ a {
 
 
 
+}
+/* footer */
+.attribution {
+   margin-top: 30px;
+   font-size: 11px;
+   text-align: center;
+}
+
+.attribution a {
+   color: hsl(228, 45%, 44%);
 }
 
 /* mobile */
@@ -307,7 +308,10 @@ a {
       background-color: #FFF;
       width: 90%;
       transition: .3s;
+      height: 100%;
+
    }
+  
 
    .navbar {
      position: relative;
@@ -317,8 +321,8 @@ a {
       left: 20%;
       height: 100%;
    }
-
-   nav ul {
+   
+   nav ul {  
       display: none;
    }
    .attribution{
@@ -327,13 +331,3 @@ a {
 }
 
 
-/* footer */
-.attribution {
-   margin-top: 30px;
-   font-size: 11px;
-   text-align: center;
-}
-
-.attribution a {
-   color: hsl(228, 45%, 44%);
-}
